@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/favicon.ico?v=1.0.2.1783" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/logo192.png" />
+    <link rel="manifest" href="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/manifest.json" />
+    <title>互动创意</title>
+    <script>
+      !(function (t, c) {
+        if (((t.TeaAnalyticsObject = 'collectEvent'), !t.collectEvent)) {
+          function e() {
+            e.q.push(arguments);
+          }
+          (e.q = e.q || []), (t.collectEvent = e);
+        }
+        t.collectEvent.l = +new Date();
+      })(window);
+    </script>
+    <script async src="https://lf1-cdn-tos.bytescm.com/obj/static/log-sdk/collect/collect.js"></script>
+    <script>
+      !(function (e, r, n, t, a, s, o, i, c, l, d, f, p, m) {
+        (s = 'precollect'),
+          (o = 'getAttribute'),
+          (i = 'addEventListener'),
+          ((l = function (e) {
+            (d = [].slice.call(arguments)).push(Date.now(), location.href), (e == s ? l.p.a : l.q).push(d);
+          }).q = []),
+          (l.p = { a: [] }),
+          (e[a] = l),
+          ((f = document.createElement('script')).src = n + '?bid=magicplay&globalName=' + a),
+          (f.crossorigin = n.indexOf('sdk-web') > 0 ? 'anonymous' : 'use-credentials'),
+          r.getElementsByTagName('head')[0].appendChild(f),
+          i in e &&
+            ((l.pcErr = function (r) {
+              (r = r || e.event),
+                (p = r.target || r.srcElement) instanceof Element || p instanceof HTMLElement
+                  ? p[o]('integrity')
+                    ? e[a](s, 'sri', p[o]('href') || p[o]('src'))
+                    : e[a](s, 'st', { tagName: p.tagName, url: p[o]('href') || p[o]('src') })
+                  : e[a](s, 'err', r.error);
+            }),
+            (l.pcRej = function (r) {
+              (r = r || e.event), e[a](s, 'err', r.reason || (r.detail && r.detail.reason));
+            }),
+            e[i]('error', l.pcErr, !0),
+            e[i]('unhandledrejection', l.pcRej, !0)),
+          'PerformanceLongTaskTiming' in e &&
+            (((m = l.pp = { entries: [] }).observer = new PerformanceObserver(function (e) {
+              m.entries = m.entries.concat(e.getEntries);
+            })),
+            m.observer.observe({ entryTypes: ['longtask', 'largest-contentful-paint', 'layout-shift'] }));
+      })(window, document, 'https://lf3-short.bytegoofy.com/slardar/fe/sdk-web/browser.cn.js', 0, 'Slardar');
+    </script>
+    <script>
+      window.Slardar('init', { bid: 'magicplay', release: window.VERSION || '', env: 'production' }),
+        window.Slardar('start');
+    </script>
+    <link
+      href="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/static/css/3.7b623529.chunk.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/static/css/editor.4f0e8c17.chunk.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="https://lf3-static.bytednsdoc.com/obj/eden-cn/fapybjlz_lm_zlp/ljhwZthlaukjlkulzlp/security/filterXss.min.js"></script>
+    <script>
+      !(function (e) {
+        function t(t) {
+          for (var n, l, f = t[0], a = t[1], i = t[2], c = 0, s = []; c < f.length; c++)
+            (l = f[c]), Object.prototype.hasOwnProperty.call(o, l) && o[l] && s.push(o[l][0]), (o[l] = 0);
+          for (n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n]);
+          for (p && p(t); s.length; ) s.shift()();
+          return u.push.apply(u, i || []), r();
+        }
+        function r() {
+          for (var e, t = 0; t < u.length; t++) {
+            for (var r = u[t], n = !0, f = 1; f < r.length; f++) {
+              var a = r[f];
+              0 !== o[a] && (n = !1);
+            }
+            n && (u.splice(t--, 1), (e = l((l.s = r[0]))));
+          }
+          return e;
+        }
+        var n = {},
+          o = { 8: 0 },
+          u = [];
+        function l(t) {
+          if (n[t]) return n[t].exports;
+          var r = (n[t] = { i: t, l: !1, exports: {} });
+          return e[t].call(r.exports, r, r.exports, l), (r.l = !0), r.exports;
+        }
+        (l.m = e),
+          (l.c = n),
+          (l.d = function (e, t, r) {
+            l.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
+          }),
+          (l.r = function (e) {
+            'undefined' != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+              Object.defineProperty(e, '__esModule', { value: !0 });
+          }),
+          (l.t = function (e, t) {
+            if ((1 & t && (e = l(e)), 8 & t || (4 & t && 'object' == typeof e && e && e.__esModule))) return e;
+            var r = Object.create(null);
+            if (
+              (l.r(r), Object.defineProperty(r, 'default', { enumerable: !0, value: e }), 2 & t && 'string' != typeof e)
+            )
+              for (var n in e)
+                l.d(
+                  r,
+                  n,
+                  function (t) {
+                    return e[t];
+                  }.bind(null, n)
+                );
+            return r;
+          }),
+          (l.n = function (e) {
+            var t =
+              e && e.__esModule
+                ? function () {
+                    return e.default;
+                  }
+                : function () {
+                    return e;
+                  };
+            return l.d(t, 'a', t), t;
+          }),
+          (l.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+          }),
+          (l.p = 'https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/');
+        var f = (this['webpackJsonp@byted/editor'] = this['webpackJsonp@byted/editor'] || []),
+          a = f.push.bind(f);
+        (f.push = t), (f = f.slice());
+        for (var i = 0; i < f.length; i++) t(f[i]);
+        var p = a;
+        r();
+      })([]);
+    </script>
+    <script src="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/static/js/2.c280eb67.chunk.js"></script>
+    <script src="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/static/js/3.7a0a049b.chunk.js"></script>
+    <script src="https://lf6-cdn2-tos.bytegoofy.com/byte-creativelab/platform/fe/static/js/editor.be1c0032.chunk.js"></script>
+  </body>
+</html>

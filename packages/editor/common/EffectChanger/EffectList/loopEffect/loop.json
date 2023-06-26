@@ -1,0 +1,370 @@
+[
+  {
+    "key": "recently",
+    "name": "最近使用",
+    "list": [
+      {
+        "script": "Breathe",
+        "name": "呼吸效果",
+        "duration": 1000
+      },
+      {
+        "script": "Heartbeat",
+        "name": "心跳效果",
+        "duration": 1000
+      },
+      {
+        "script": "Float",
+        "name": "上下浮动",
+        "duration": 1000,
+        "props": { "distanceY": 100 }
+      },
+      {
+        "script": "Float",
+        "name": "左右浮动",
+        "duration": 1000,
+        "props": { "distanceX": 100 }
+      },
+      {
+        "script": "GoAndBack",
+        "duration": 4000,
+        "name": "左右往返",
+        "props": { "distanceX": 300, "stayTime": 1000 }
+      },
+      {
+        "script": "GoAndBack",
+        "duration": 4000,
+        "name": "上下往返",
+        "props": { "distanceY": 300, "stayTime": 1000 }
+      },
+      {
+        "script": "Rotate",
+        "name": "顺时旋转",
+        "duration": 1000
+      },
+      {
+        "script": "Rotate",
+        "name": "逆时旋转",
+        "duration": 1000,
+        "props": { "rotateRange": -360 }
+      },
+      {
+        "script": "Vibrate",
+        "name": "振动",
+        "duration": 1000
+      },
+      {
+        "script": "Shake",
+        "name": "顶部摇晃",
+        "duration": 1000,
+        "props": { "anchorY": -1, "rotateRange": 5 }
+      }
+    ]
+  },
+  {
+    "key": "scale",
+    "name": "缩放循环",
+    "list": [
+      {
+        "script": "Breathe",
+        "name": "呼吸效果",
+        "duration": 1000
+      },
+      {
+        "script": "Heartbeat",
+        "name": "心跳效果",
+        "duration": 1000
+      },
+      {
+        "script": "Pulse",
+        "name": "放大",
+        "duration": 1000,
+        "props": { "scaleRange": 0.5 }
+      },
+      {
+        "script": "Pulse",
+        "name": "缩小",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5 }
+      },
+      {
+        "script": "Wave",
+        "name": "放大波浪",
+        "duration": 1000
+      },
+      {
+        "script": "Wave",
+        "name": "缩小波浪",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5 }
+      },
+      {
+        "script": "Pulse",
+        "name": "脉冲向前",
+        "duration": 1000
+      },
+      {
+        "script": "Pulse",
+        "name": "脉冲向后",
+        "duration": 1000,
+        "props": { "scaleRange": -0.15 }
+      }
+    ]
+  },
+  {
+    "key": "translate",
+    "name": "位移循环",
+    "list": [
+      {
+        "script": "Float",
+        "name": "上下浮动",
+        "duration": 1000,
+        "props": { "distanceY": 100 }
+      },
+      {
+        "script": "Float",
+        "name": "左右浮动",
+        "duration": 1000,
+        "props": { "distanceX": 100 }
+      },
+      {
+        "script": "Float",
+        "name": "左上浮动",
+        "duration": 1000,
+        "props": { "distanceX": 100, "distanceY": 100 }
+      },
+      {
+        "script": "Float",
+        "name": "右上浮动",
+        "duration": 1000,
+        "props": { "distanceX": -100, "distanceY": 100 }
+      },
+      {
+        "script": "GoAndBack",
+        "duration": 4000,
+        "name": "左右往返",
+        "props": { "distanceX": 300, "stayTime": 1000 }
+      },
+      {
+        "script": "GoAndBack",
+        "duration": 4000,
+        "name": "上下往返",
+        "props": { "distanceY": 300, "stayTime": 1000 }
+      }
+    ]
+  },
+  {
+    "key": "bounce",
+    "name": "弹性循环",
+    "list": [
+      {
+        "script": "Jelly",
+        "duration": 1000,
+        "name": "水平果冻"
+      },
+      {
+        "script": "Jelly",
+        "duration": 1000,
+        "name": "垂直果冻",
+        "props": { "amplitudeX": -0.2, "amplitudeY": 0.2 }
+      },
+      {
+        "script": "Bounce",
+        "name": "顶部弹跳",
+        "duration": 1000,
+        "props": { "distanceY": 50 }
+      },
+      {
+        "script": "Bounce",
+        "name": "底部弹跳",
+        "duration": 1000,
+        "props": { "distanceY": -50 }
+      },
+      {
+        "script": "Bounce",
+        "name": "左边弹跳",
+        "duration": 1000,
+        "props": { "distanceX": 50 }
+      },
+      {
+        "script": "Bounce",
+        "name": "右边弹跳",
+        "duration": 1000,
+        "props": { "distanceX": -50 }
+      }
+    ]
+  },
+  {
+    "key": "rotate",
+    "name": "旋转循环",
+    "list": [
+      {
+        "script": "Rotate",
+        "name": "顺时旋转",
+        "duration": 1000
+      },
+      {
+        "script": "Rotate",
+        "name": "逆时旋转",
+        "duration": 1000,
+        "props": { "rotateRange": -360 }
+      },
+      {
+        "script": "Swing",
+        "name": "秋千效果",
+        "duration": 1000
+      }
+    ]
+  },
+  {
+    "key": "opacity",
+    "name": "透明度循环",
+    "list": [
+      {
+        "script": "Twinkle",
+        "name": "闪烁效果",
+        "duration": 2000
+      },
+      {
+        "script": "Twinkle",
+        "name": "闪烁效果2",
+        "duration": 2000,
+        "props": { "startAlpha": 1.3 }
+      },
+      {
+        "script": "Flash",
+        "duration": 1000,
+        "name": "故障闪烁1"
+      },
+      {
+        "script": "Flash",
+        "duration": 1000,
+        "name": "故障闪烁2",
+        "props": { "ease": "flash2" }
+      }
+    ]
+  },
+  {
+    "key": "shake",
+    "name": "震动与晃动",
+    "list": [
+      {
+        "script": "Jolty",
+        "name": "抖动效果",
+        "duration": 1000,
+        "props": { "ease": "shake2", "rotateRange": 20 }
+      },
+      {
+        "script": "Shake",
+        "name": "顶部震动",
+        "duration": 1000,
+        "props": { "anchorY": 0 }
+      },
+      {
+        "script": "Shake",
+        "name": "底部震动",
+        "duration": 1000,
+        "props": { "anchorY": 1 }
+      },
+      {
+        "script": "Shake",
+        "name": "左边震动",
+        "duration": 1000,
+        "props": { "anchorX": 0 }
+      },
+      {
+        "script": "Shake",
+        "name": "右边震动",
+        "duration": 1000,
+        "props": { "anchorX": 1 }
+      },
+      {
+        "script": "Shake",
+        "name": "左上震动",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 0 }
+      },
+      {
+        "script": "Shake",
+        "name": "左下震动",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1 }
+      },
+      {
+        "script": "Shake",
+        "name": "右上震动",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 0 }
+      },
+      {
+        "script": "Shake",
+        "name": "右下震动",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1 }
+      },
+      {
+        "script": "Shake",
+        "name": "上下震动",
+        "duration": 1000,
+        "props": { "scaleRange": 0, "distanceY": 20 }
+      },
+      {
+        "script": "Shake",
+        "name": "左右震动",
+        "duration": 1000,
+        "props": { "scaleRange": 0, "distanceX": 20 }
+      },
+      {
+        "script": "Vibrate",
+        "name": "振动",
+        "duration": 1000
+      },
+      {
+        "script": "Shake",
+        "name": "顶部摇晃",
+        "duration": 1000,
+        "props": { "anchorY": -1, "rotateRange": 5 }
+      },
+      {
+        "script": "Shake",
+        "name": "底部摇晃",
+        "duration": 1000,
+        "props": { "anchorY": 2, "rotateRange": 5 }
+      },
+      {
+        "script": "Shake",
+        "name": "左边摇晃",
+        "duration": 1000,
+        "props": { "anchorX": -1, "rotateRange": 5 }
+      },
+      {
+        "script": "Shake",
+        "name": "右边摇晃",
+        "duration": 1000,
+        "props": { "anchorX": 2, "rotateRange": 5 }
+      }
+    ]
+  },
+  {
+    "key": "combo",
+    "name": "组合循环",
+    "list": [
+      {
+        "script": "RotateScale",
+        "name": "旋转放大",
+        "duration": 1000
+      },
+      {
+        "script": "RotateScale",
+        "name": "旋转缩小",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5 }
+      },
+      {
+        "script": "ShakeScale",
+        "name": "抖动放大",
+        "duration": 1000
+      }
+    ]
+  }
+]

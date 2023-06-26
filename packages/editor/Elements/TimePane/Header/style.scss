@@ -1,0 +1,68 @@
+.editor-timeline-scene-header {
+  &-main {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    padding-bottom: 32px;
+    // background: #fff;
+    // overflow: hidden;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    // NOTE: this will interfere scroll-margin-top!
+    // overflow: hidden;
+    border-right: 1px solid white;
+    scroll-margin-top: 32px;
+    &-disabled {
+      opacity: 0.38;
+      filter: grayscale(1);
+    }
+    &:nth-child(2n-1) {
+      background-color: #f0f0f0;
+      & > button svg {
+        background-color: #f0f0f0;
+      }
+    }
+
+    &:nth-child(2n) {
+      background-color: #fafafa;
+      & > button svg {
+        background-color: #fafafa;
+      }
+    }
+    &-selected {
+      &:nth-child(2n-1) {
+        background-color: #c5cfdb;
+        & > button svg {
+          background-color: #c5cfdb;
+        }
+      }
+
+      &:nth-child(2n) {
+        background-color: #c5cfdb;
+        & > button svg {
+          background-color: #c5cfdb;
+        }
+      }
+    }
+    &-after {
+      border-top: 2px solid #1890ff;
+    }
+    &-before {
+      border-bottom: 2px solid #1890ff;
+    }
+    &-inside {
+      color: white !important;
+      background-color: #1890ff !important;
+      & > button svg {
+        background-color: #1890ff !important;
+      }
+    }
+  }
+}

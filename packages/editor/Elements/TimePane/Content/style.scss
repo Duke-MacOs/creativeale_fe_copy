@@ -1,0 +1,139 @@
+.editor-timeline-scene-content {
+  &-main {
+    padding-bottom: 32px;
+    position: relative;
+  }
+  &-item {
+    height: 32px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 24px 0 20px;
+    overflow: hidden;
+    &:nth-child(2n-1) {
+      background-color: #f0f0f0;
+    }
+    &:nth-child(2n) {
+      background-color: #fafafa;
+    }
+    &-selected {
+      &:nth-child(2n-1) {
+        background-color: #c5cfdb;
+      }
+      &:nth-child(2n) {
+        background-color: #c5cfdb;
+      }
+    }
+    &-disabled {
+      opacity: 0.48;
+      filter: grayscale(1);
+    }
+    &-tips {
+      color: #999;
+      pointer-events: none;
+      transition: 200ms;
+      opacity: 0;
+    }
+    &:hover &-tips {
+      opacity: 1;
+    }
+  }
+  &-effect {
+    position: absolute;
+    height: 24px;
+    border-radius: 6px;
+    opacity: 0.48;
+    cursor: pointer;
+    transition: opacity 1s;
+    &:hover {
+      opacity: 0.72;
+    }
+    &-activated,
+    &-selected {
+      opacity: 1;
+    }
+    &-altKey {
+      transition: transform 400ms;
+    }
+    &-disabled {
+      opacity: 0.48;
+      filter: grayscale(1);
+    }
+    &-shadowed {
+      pointer-events: none;
+      opacity: 0.1;
+    }
+    &-interval {
+      opacity: 0.1;
+      &:hover,
+      &-activated {
+        opacity: 0.48;
+      }
+    }
+  }
+  &-handle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: '';
+      background-color: white;
+      border-radius: 2px;
+      height: 10px;
+      width: 2px;
+    }
+  }
+  &-script {
+    position: absolute;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0.48;
+    height: 20px;
+    width: 20px;
+    left: 10px;
+    line-height: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 0.72;
+    }
+    &-altKey {
+      transition: transform 400ms;
+    }
+    &-selected {
+      opacity: 1;
+    }
+    &-disabled {
+      opacity: 0.48;
+      filter: grayscale(1);
+    }
+  }
+  &-script-item {
+    padding: 8px;
+    transition: 200ms;
+    &:hover {
+      background-color: #f0f2f5;
+    }
+  }
+  &-modal {
+    .ant-modal-content {
+      border-radius: 4px;
+    }
+    .ant-modal-content > .ant-modal-close {
+      span {
+        font-size: 10px;
+      }
+    }
+    .ant-modal-header {
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 0px;
+      border: none;
+    }
+    .ant-modal-body {
+      padding: 0px;
+    }
+  }
+}

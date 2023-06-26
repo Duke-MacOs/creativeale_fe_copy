@@ -1,0 +1,101 @@
+[
+  {
+    "key": "common",
+    "name": "通用",
+    "list": [
+      {
+        "script": "AlphaTo",
+        "duration": 1000,
+        "name": "透明动画"
+      },
+      {
+        "script": "Move",
+        "duration": 1000,
+        "name": "位移动画",
+        "props": { "distanceY": 300 }
+      },
+      {
+        "script": "MoveTo",
+        "duration": 1000,
+        "name": "位移到",
+        "props": { "distanceY": 300, "x": 0, "y": 0 }
+      },
+      {
+        "script": "Rotate",
+        "duration": 1000,
+        "name": "旋转动画"
+      },
+      {
+        "script": "RotateTo",
+        "duration": 1000,
+        "name": "旋转到"
+      },
+      {
+        "script": "Scale",
+        "duration": 1000,
+        "name": "缩放动画"
+      },
+      {
+        "script": "ScaleTo",
+        "duration": 1000,
+        "name": "缩放到"
+      },
+      {
+        "script": "SizeTo",
+        "duration": 1000,
+        "name": "大小动画",
+        "props": { "width": 100, "height": 100 }
+      },
+      {
+        "script": "Path",
+        "duration": 1000,
+        "name": "路径动画",
+        "props": {
+          "path": []
+        }
+      },
+      {
+        "script": "Typing",
+        "duration": 1000,
+        "name": "打字效果"
+      },
+      {
+        "script": "CountDown",
+        "duration": 5000,
+        "name": "倒计时效果"
+      },
+      {
+        "script": "Toast",
+        "duration": 3000,
+        "name": "出现后消失"
+      },
+      {
+        "script": "Brightness",
+        "duration": 1000,
+        "name": "亮度动画"
+      },
+      {
+        "script": "Contrast",
+        "duration": 1000,
+        "name": "对比度动画"
+      },
+      {
+        "script": "Saturation",
+        "duration": 1000,
+        "name": "饱和度动画"
+      },
+      {
+        "script": "Anchor",
+        "duration": 1000,
+        "name": "锚点动画",
+        "props": { "axisX": 0, "axisY": 0 }
+      },
+      {
+        "script": "Flip",
+        "duration": 1000,
+        "name": "翻转动画",
+        "props": { "flipX": true, "flipY": false }
+      }
+    ]
+  }
+]

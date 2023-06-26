@@ -1,0 +1,500 @@
+[
+  {
+    "key": "recently",
+    "name": "最近使用",
+    "list": [
+      {
+        "script": "FadeIO",
+        "name": "淡入",
+        "duration": 1000
+      },
+      {
+        "script": "MoveIO",
+        "name": "左边滑入",
+        "duration": 1000,
+        "props": { "distanceX": -500 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "放大出现",
+        "duration": 1000
+      },
+      {
+        "script": "TurnIO",
+        "name": "右转出现",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左转出现",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "弹入出现",
+        "duration": 1000,
+        "props": { "ease": "elasticOut" }
+      },
+      {
+        "script": "Toast",
+        "duration": 3000,
+        "name": "出现后消失"
+      }
+    ]
+  },
+  {
+    "key": "opacity",
+    "name": "透明度变化",
+    "list": [
+      {
+        "script": "ImmediateIO",
+        "name": "立即出现",
+        "duration": 1000
+      },
+      {
+        "script": "FadeIO",
+        "name": "淡入",
+        "duration": 1000
+      },
+      {
+        "script": "Toast",
+        "duration": 3000,
+        "name": "出现后消失"
+      }
+    ]
+  },
+  {
+    "key": "translate",
+    "name": "平移出现",
+    "list": [
+      {
+        "script": "MoveIO",
+        "name": "左边滑入",
+        "duration": 1000,
+        "props": { "distanceX": -500 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右边滑入",
+        "duration": 1000,
+        "props": { "distanceX": 500 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "顶部滑入",
+        "duration": 1000,
+        "props": { "distanceY": -800 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "底部滑入",
+        "duration": 1000,
+        "props": { "distanceY": 800 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左上滑入",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": -800 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左下滑入",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": 800 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右上滑入",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": -800 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右下滑入",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": 800 }
+      }
+    ]
+  },
+  {
+    "key": "scale",
+    "name": "缩放出现",
+    "list": [
+      {
+        "script": "ScaleIO",
+        "name": "放大出现",
+        "duration": 1000
+      },
+      {
+        "script": "SmallIO",
+        "name": "缩小出现",
+        "duration": 1000
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向下放大",
+        "duration": 1000,
+        "props": { "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向上放大",
+        "duration": 1000,
+        "props": { "anchorY": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向左放大",
+        "duration": 1000,
+        "props": { "anchorX": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向右放大",
+        "duration": 1000,
+        "props": { "anchorX": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "右下放大",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左下放大",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "右上放大",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左上放大",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1 }
+      }
+    ]
+  },
+  {
+    "key": "rotate",
+    "name": "旋转出现",
+    "list": [
+      {
+        "script": "RotateIO",
+        "name": "旋转出现",
+        "duration": 1000
+      },
+      {
+        "script": "TurnIO",
+        "name": "右转出现",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左转出现",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "顶部旋入",
+        "duration": 1000,
+        "props": { "anchorY": 0, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "底部旋入",
+        "duration": 1000,
+        "props": { "anchorY": 1, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "左边旋入",
+        "duration": 1000,
+        "props": { "anchorX": 0, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "右边旋入",
+        "duration": 1000,
+        "props": { "anchorX": 1, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左上切入",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左下切入",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "startAngle": 45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "右上切入",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "startAngle": 45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "右下切入",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "startAngle": -45 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "左上出现",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 0, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "左下出现",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "右上出现",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 0, "rotateRange": 540, "startAngle": 180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "右下出现",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "rotateRange": 540, "startAngle": 180 }
+      }
+    ]
+  },
+  {
+    "key": "skew",
+    "name": "翻转出现",
+    "list": [
+      {
+        "script": "SkewIO",
+        "name": "向右翻转",
+        "duration": 1000,
+        "props": { "scaleRange": 0.5 }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向左翻转",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5 }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向下翻转",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5, "enableX": false, "enableY": true }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向上翻转",
+        "duration": 1000,
+        "props": { "scaleRange": 0.5, "enableX": false, "enableY": true }
+      }
+    ]
+  },
+  {
+    "key": "bounce",
+    "name": "弹动出现",
+    "list": [
+      {
+        "script": "ScaleIO",
+        "name": "弹入出现",
+        "duration": 1000,
+        "props": { "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左边弹入",
+        "duration": 1000,
+        "props": { "distanceX": -500, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右边弹入",
+        "duration": 1000,
+        "props": { "distanceX": 500, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "顶部弹入",
+        "duration": 1000,
+        "props": { "distanceY": -800, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "底部弹入",
+        "duration": 1000,
+        "props": { "distanceY": 800, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左上弹入",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": -800, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左下弹入",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": 800, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右上弹入",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": -800, "ease": "elasticOut" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右下弹入",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": 800, "ease": "elasticOut" }
+      }
+    ]
+  },
+  {
+    "key": "scroll",
+    "name": "滚动出现",
+    "list": [
+      {
+        "script": "RotateMoveIO",
+        "name": "左边滚入",
+        "duration": 1000,
+        "props": { "distanceX": -300 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右边滚入",
+        "duration": 1000,
+        "props": { "distanceX": 300 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "顶部滚入",
+        "duration": 1000,
+        "props": { "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "底部滚入",
+        "duration": 1000,
+        "props": { "distanceY": 600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "左上滚入",
+        "duration": 1000,
+        "props": { "distanceX": -300, "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "左下滚入",
+        "duration": 1000,
+        "props": { "distanceX": -300, "distanceY": 600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右上滚入",
+        "duration": 1000,
+        "props": { "distanceX": 300, "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右下滚入",
+        "duration": 1000,
+        "props": { "distanceX": 300, "distanceY": 600 }
+      }
+    ]
+  },
+  {
+    "key": "expand",
+    "name": "展开出现",
+    "list": [
+      {
+        "script": "ScaleIO",
+        "name": "向上展开",
+        "duration": 1000,
+        "props": { "anchorY": 1, "enableX": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向下展开",
+        "duration": 1000,
+        "props": { "anchorY": 0, "enableX": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向左展开",
+        "duration": 1000,
+        "props": { "anchorX": 1, "enableY": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向右展开",
+        "duration": 1000,
+        "props": { "anchorX": 0, "enableY": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "上下展开",
+        "duration": 1000,
+        "props": { "enableX": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左右展开",
+        "duration": 1000,
+        "props": { "enableY": false }
+      }
+    ]
+  },
+  {
+    "key": "combo",
+    "name": "组合出现",
+    "list": [
+      {
+        "script": "TurnSmallIO",
+        "name": "右转缩入",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnSmallIO",
+        "name": "左转缩入",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      },
+      {
+        "script": "TurnScaleIO",
+        "name": "放大转入",
+        "duration": 1000
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "放大旋入",
+        "duration": 1000
+      },
+      {
+        "script": "RotateSmallIO",
+        "name": "缩小旋入",
+        "duration": 1000
+      }
+    ]
+  }
+]

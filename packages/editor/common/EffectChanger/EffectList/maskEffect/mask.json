@@ -1,0 +1,124 @@
+[
+  {
+    "key": "mask",
+    "name": "遮罩动画",
+    "list": [
+      {
+        "script": "CircularMask",
+        "name": "圆形",
+        "duration": 1000
+      },
+      {
+        "script": "ClockMask",
+        "name": "钟表",
+        "duration": 1000
+      },
+      {
+        "script": "DownToUpMask",
+        "name": "向上展开",
+        "duration": 1000
+      },
+      {
+        "script": "UpToDownMask",
+        "name": "向下展开",
+        "duration": 1000
+      },
+      {
+        "script": "LeftToRightMask",
+        "name": "向右展开",
+        "duration": 1000
+      },
+      {
+        "script": "RightToLeftMask",
+        "name": "向左展开",
+        "duration": 1000
+      },
+      {
+        "script": "SkewMask",
+        "name": "斜切",
+        "duration": 1000
+      },
+      {
+        "script": "TriangleMask",
+        "name": "三角形",
+        "duration": 1000
+      },
+      {
+        "script": "SquareMask",
+        "name": "正方形",
+        "duration": 1000
+      },
+      {
+        "script": "DiamondMask",
+        "name": "菱形",
+        "duration": 1000
+      },
+      {
+        "script": "PentagonMask",
+        "name": "五边形",
+        "duration": 1000
+      },
+      {
+        "script": "OctagonMask",
+        "name": "八边形",
+        "duration": 1000
+      },
+      {
+        "script": "PentagramMask",
+        "name": "五角星",
+        "duration": 1000
+      },
+      {
+        "script": "StarMask",
+        "name": "十字星",
+        "duration": 1000
+      },
+      {
+        "script": "OctagramMask",
+        "name": "八角星",
+        "duration": 1000
+      },
+      {
+        "script": "HeartMask",
+        "name": "心型",
+        "duration": 1000
+      },
+      {
+        "script": "BlindsMask",
+        "name": "横百叶窗",
+        "duration": 1000
+      },
+      {
+        "script": "BlindsMask",
+        "name": "竖百叶窗",
+        "duration": 1000,
+        "props": { "isHorizontal": false }
+      },
+      {
+        "script": "DiagonalMask",
+        "name": "菱形展开",
+        "duration": 1000
+      },
+      {
+        "script": "MultiPotMask",
+        "name": "波点渐变",
+        "duration": 1000
+      },
+      {
+        "script": "WiperMask",
+        "name": "雨刷",
+        "duration": 1000
+      },
+      {
+        "script": "SpreadMask",
+        "name": "展开",
+        "duration": 1000
+      },
+      {
+        "script": "WindmillMask",
+        "name": "风车",
+        "duration": 1000
+      }
+    ]
+  }
+]

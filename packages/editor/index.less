@@ -1,0 +1,41 @@
+body {
+  overflow: hidden;
+  overscroll-behavior-x: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+canvas {
+  outline: none;
+}
+
+#root {
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.global-dragging-cursor {
+  cursor: move;
+  pointer-events: none;
+  user-select: none;
+}
+.global-resize-y-cursor {
+  cursor: ns-resize;
+  pointer-events: none;
+  user-select: none;
+}
+// NOTE: when an element is disabled,
+// no events will be generating, which leads to moving hanging
+[disabled] {
+  pointer-events: none;
+}
+
+.global-user-drag-none {
+  img {
+    -webkit-user-drag: none;
+  }
+}

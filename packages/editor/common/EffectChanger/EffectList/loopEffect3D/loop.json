@@ -1,0 +1,38 @@
+[
+  {
+    "key": "common",
+    "name": "通用",
+    "list": [
+      {
+        "script": "Breathe3D",
+        "name": "呼吸效果",
+        "duration": 1000,
+        "props": { "scaleRange": 0.1 }
+      },
+      {
+        "script": "Heartbeat3D",
+        "name": "心跳效果",
+        "duration": 1000,
+        "props": { "scaleRange": 0.2 }
+      },
+      {
+        "script": "Float3D",
+        "name": "上下浮动",
+        "duration": 1000,
+        "props": { "offsetPos": [0, 1, 0] }
+      },
+      {
+        "script": "Float3D",
+        "name": "左右浮动",
+        "duration": 1000,
+        "props": { "offsetPos": [1, 0, 0] }
+      },
+      {
+        "script": "Jelly3D",
+        "duration": 1000,
+        "name": "果冻",
+        "props": { "amplitudeVector": [0.2, 0.2, 0.2] }
+      }
+    ]
+  }
+]

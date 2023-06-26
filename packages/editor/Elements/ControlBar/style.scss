@@ -1,0 +1,30 @@
+.editor-timeline-control-bar {
+  &-main {
+    position: relative;
+    display: flex;
+    flex: 0 0 42px;
+  }
+  &-edit,
+  &-play {
+    display: flex;
+    align-items: center;
+  }
+
+  &-edit {
+    flex: 0 0 240px;
+  }
+  &-play {
+    flex: auto;
+  }
+  &-moment {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 8px;
+    flex: auto;
+  }
+  &-icons {
+    cursor: pointer;
+    margin: 0 8px;
+    flex: none;
+  }
+}

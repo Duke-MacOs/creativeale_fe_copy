@@ -1,0 +1,55 @@
+.editor-scenes {
+  // background: #fff;
+  flex: 0 0 164px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // border-right: 1px solid #eaeaea;
+  cursor: pointer;
+
+  & > .scene-menu {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > .scene-list {
+    padding: 0 10px;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #c1c1c1;
+      border-radius: 10px;
+      height: 30%;
+      border: 3px solid #fff;
+    }
+
+    &:hover {
+      overflow-y: scroll;
+      padding-right: 0;
+    }
+  }
+}
+
+.sceneModal {
+  .ant-modal-header {
+    padding: 0 !important;
+    border-bottom: none;
+  }
+  .ant-tabs-nav {
+    margin: 0;
+  }
+}
+
+.sceneModal a {
+  color: #333;
+  &:hover {
+    color: #3955f6;
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "key": "common",
+    "name": "通用",
+    "list": [
+      {
+        "script": "Move3D",
+        "duration": 1000,
+        "name": "位移动画",
+        "props": { "offsetPos": [1, 0, 0] }
+      },
+      {
+        "script": "MoveTo3D",
+        "duration": 1000,
+        "name": "位移到",
+        "props": { "destPos": [0, 0, 0] }
+      },
+      {
+        "script": "Rotate3D",
+        "duration": 1000,
+        "name": "旋转动画",
+        "props": { "offsetAngle": [90, 0, 0] }
+      },
+      {
+        "script": "RotateTo3D",
+        "duration": 1000,
+        "name": "旋转到",
+        "props": { "destAngle": [0, 0, 0] }
+      },
+      {
+        "script": "Scale3D",
+        "duration": 1000,
+        "name": "缩放动画",
+        "props": { "offsetScale": [0.2, 0.2, 0.2] }
+      },
+      {
+        "script": "ScaleTo3D",
+        "duration": 1000,
+        "name": "缩放到",
+        "props": { "destScale": [1, 1, 1] }
+      }
+    ]
+  }
+]

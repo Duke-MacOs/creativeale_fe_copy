@@ -1,0 +1,213 @@
+[
+  {
+    "control": {
+      "type": "phase",
+      "tooltip": "",
+      "preview": "https://lf3-static.bytednsdoc.com/obj/eden-cn/0000eh7nupsbfuhf/reward-qaa/ewqard-qaa_phase.png",
+      "label": "轻互动配置",
+      "children": [
+        {
+          "control": {
+            "type": "section",
+            "tooltip": "",
+            "label": "基础配置",
+            "children": [
+              {
+                "control": {
+                  "type": "input",
+                  "tooltip": "",
+                  "default": "",
+                  "maxLength": 15,
+                  "label": "组件名称"
+                },
+                "attribute": { "type": "string", "path": "project.name" }
+              },
+              {
+                "control": {
+                  "type": "inputNumber",
+                  "tooltip": "",
+                  "default": 3.0,
+                  "min": 3.0,
+                  "max": 25.0,
+                  "step": 0.1,
+                  "precision": 1,
+                  "unit": "秒",
+                  "notes": "互动组件在视频播放至第n秒时出现, 请输入3.0～25.0之间的数字(单位: 秒)",
+                  "label": "互动时间点"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": "videoControl.time.activeTime"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "control": {
+            "type": "section",
+            "tooltip": "",
+            "label": "互动场景-问题",
+            "children": [
+              {
+                "control": {
+                  "type": "input",
+                  "tooltip": "",
+                  "default": "",
+                  "placeholder": "填写希望用户回答的问题",
+                  "required": true,
+                  "notes": "",
+                  "maxLength": 15,
+                  "label": "问题文案"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.question"]
+                }
+              },
+              {
+                "control": {
+                  "type": "input",
+                  "tooltip": "",
+                  "default": "",
+                  "placeholder": "填写引导用户交互的文案，例如：回答正确可提前5秒跳过视频",
+                  "required": true,
+                  "notes": "",
+                  "maxLength": 15,
+                  "label": "引导文案"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.skip_message"]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "control": {
+            "type": "section",
+            "tooltip": "",
+            "label": "互动场景-选项",
+            "children": [
+              {
+                "control": {
+                  "type": "input",
+                  "tooltip": "",
+                  "default": "",
+                  "placeholder": "填写选项内容",
+                  "required": true,
+                  "maxLength": 8,
+                  "label": "选项一"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.options[0].value"]
+                }
+              },
+              {
+                "control": {
+                  "type": "input",
+                  "tooltip": "",
+                  "default": "",
+                  "placeholder": "填写选项内容",
+                  "required": true,
+                  "maxLength": 8,
+                  "label": "选项二"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.options[1].value"]
+                }
+              },
+              {
+                "control": {
+                  "type": "radio",
+                  "tooltip": "",
+                  "default": 0,
+                  "options": [
+                    { "value": 0, "text": "选项一" },
+                    { "value": 1, "text": "选项二" }
+                  ],
+                  "label": "正确选项"
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.option_right_key"]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "control": {
+            "type": "section",
+            "tooltip": "",
+            "label": "奖励场景-抵扣时长",
+            "children": [
+              {
+                "control": {
+                  "type": "inputNumber",
+                  "tooltip": "",
+                  "default": 5,
+                  "label": "抵扣时长",
+                  "step": 1,
+                  "precision": 0,
+                  "max": 25,
+                  "unit": "秒",
+                  "notes": "设置用户可提前跳过广告播放的时长, 请输入5～25之间的数字(单位: 秒)",
+                  "min": 5
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["ad_config.easy_playable_skip_duration", "data.skip"]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "control": {
+            "type": "section",
+            "tooltip": "",
+            "label": "奖励场景-转化按钮",
+            "children": [
+              {
+                "control": {
+                  "type": "switch",
+                  "tooltip": "",
+                  "default": true,
+                  "notes": "开启个性化优选后，系统将根据投放场景为你自动选择最优文案展示",
+                  "label": "按钮文案个性化优选"
+                },
+                "attribute": { "type": "string", "path": "ad_config.preferred" }
+              },
+              {
+                "control": {
+                  "type": "radio",
+                  "tooltip": "",
+                  "default": "立即下载领取",
+                  "options": [
+                    { "value": "立即领取", "text": "立即领取" },
+                    { "value": "立即下载领取", "text": "立即下载领取" }
+                  ],
+                  "label": "按钮文案"
+                },
+                "status": {
+                  "hidden": {
+                    "path": "ad_config.preferred",
+                    "activeValue": true
+                  }
+                },
+                "attribute": {
+                  "type": "string",
+                  "path": ["pgc.ctaText"]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

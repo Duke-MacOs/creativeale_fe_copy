@@ -1,0 +1,547 @@
+[
+  {
+    "key": "recently",
+    "name": "最近使用",
+    "list": [
+      {
+        "script": "FadeIO",
+        "name": "淡出",
+        "duration": 1000
+      },
+      {
+        "script": "MoveIO",
+        "name": "右边滑出",
+        "duration": 1000,
+        "props": { "distanceX": 600 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "缩小消失",
+        "duration": 1000
+      },
+      {
+        "script": "TurnIO",
+        "name": "右旋消失",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左旋消失",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      },
+      {
+        "script": "SmallIO",
+        "duration": 1000,
+        "name": "中心弹出",
+        "props": { "startScale": 0.2, "ease": "backIn" }
+      },
+      {
+        "script": "Toast",
+        "duration": 3000,
+        "name": "出现后消失"
+      }
+    ]
+  },
+  {
+    "key": "opacity",
+    "name": "透明度变化",
+    "list": [
+      {
+        "script": "ImmediateIO",
+        "name": "立即消失",
+        "duration": 1000
+      },
+      {
+        "script": "FadeIO",
+        "name": "淡出",
+        "duration": 1000
+      },
+      {
+        "script": "Toast",
+        "duration": 3000,
+        "name": "出现后消失"
+      }
+    ]
+  },
+  {
+    "key": "translate",
+    "name": "平移消失",
+    "list": [
+      {
+        "script": "MoveIO",
+        "name": "左边滑出",
+        "duration": 1000,
+        "props": { "distanceX": -600 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右边滑出",
+        "duration": 1000,
+        "props": { "distanceX": 600 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "顶部滑出",
+        "duration": 1000,
+        "props": { "distanceY": -1000 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "底部滑出",
+        "duration": 1000,
+        "props": { "distanceY": 1000 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左上滑出",
+        "duration": 1000,
+        "props": { "distanceX": -600, "distanceY": -1000 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左下滑出",
+        "duration": 1000,
+        "props": { "distanceX": -600, "distanceY": 1000 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右上滑出",
+        "duration": 1000,
+        "props": { "distanceX": 600, "distanceY": -1000 }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右下滑出",
+        "duration": 1000,
+        "props": { "distanceX": 600, "distanceY": 1000 }
+      }
+    ]
+  },
+  {
+    "key": "scale",
+    "name": "缩放消失",
+    "list": [
+      {
+        "script": "ScaleIO",
+        "name": "缩小消失",
+        "duration": 1000
+      },
+      {
+        "script": "SmallIO",
+        "name": "放大消失",
+        "duration": 1000
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向上缩小",
+        "duration": 1000,
+        "props": { "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向下缩小",
+        "duration": 1000,
+        "props": { "anchorY": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向左缩小",
+        "duration": 1000,
+        "props": { "anchorX": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向右缩小",
+        "duration": 1000,
+        "props": { "anchorX": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左上缩小",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "右上缩小",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 0 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左下缩小",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1 }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "右下缩小",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1 }
+      }
+    ]
+  },
+  {
+    "key": "rotate",
+    "name": "旋转消失",
+    "list": [
+      {
+        "script": "RotateIO",
+        "name": "旋转消失",
+        "duration": 1000
+      },
+      {
+        "script": "TurnIO",
+        "name": "右旋消失",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左旋消失",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "顶部旋出",
+        "duration": 1000,
+        "props": { "anchorY": 0, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "底部旋出",
+        "duration": 1000,
+        "props": { "anchorY": 1, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "左边旋出",
+        "duration": 1000,
+        "props": { "anchorX": 0, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateIO",
+        "name": "右边旋出",
+        "duration": 1000,
+        "props": { "anchorX": 1, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左上切出",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "startAngle": -45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "左下切出",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "startAngle": 45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "右上切出",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "startAngle": 45 }
+      },
+      {
+        "script": "TurnIO",
+        "name": "右下切出",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "startAngle": -45 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "左下旋出",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 1, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "右下旋出",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 1, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "左上旋出",
+        "duration": 1000,
+        "props": { "anchorX": 0, "anchorY": 0, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "RotateScaleIO",
+        "name": "右上旋出",
+        "duration": 1000,
+        "props": { "anchorX": 1, "anchorY": 0, "rotateRange": 540, "startAngle": -180 }
+      },
+      {
+        "script": "TurnScaleIO",
+        "name": "转动消失",
+        "duration": 1000
+      },
+      {
+        "script": "RotateBlurIO",
+        "duration": 1000,
+        "name": "向左模糊",
+        "props": { "anchorX": -0.3, "anchorY": 0.5, "startAngle": -120, "rotateRange": 120 }
+      },
+      {
+        "script": "RotateBlurIO",
+        "duration": 1000,
+        "name": "向右模糊",
+        "props": { "anchorX": 1.3, "anchorY": 0.5, "startAngle": 120, "rotateRange": -120 }
+      }
+    ]
+  },
+  {
+    "key": "skew",
+    "name": "翻转消失",
+    "list": [
+      {
+        "script": "SkewIO",
+        "name": "向右翻转",
+        "duration": 1000,
+        "props": { "scaleRange": 0.5 }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向左翻转",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5 }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向下翻转",
+        "duration": 1000,
+        "props": { "scaleRange": -0.5, "enableX": false, "enableY": true }
+      },
+      {
+        "script": "SkewIO",
+        "name": "向上翻转",
+        "duration": 1000,
+        "props": { "scaleRange": 0.5, "enableX": false, "enableY": true }
+      }
+    ]
+  },
+  {
+    "key": "bounce",
+    "name": "弹动消失",
+    "list": [
+      {
+        "script": "SmallIO",
+        "duration": 1000,
+        "name": "中心弹出",
+        "props": { "startScale": 0.2, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左边弹出",
+        "duration": 1000,
+        "props": { "distanceX": -500, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右边弹出",
+        "duration": 1000,
+        "props": { "distanceX": 500, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "顶部弹出",
+        "duration": 1000,
+        "props": { "distanceY": -1000, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "底部弹出",
+        "duration": 1000,
+        "props": { "distanceY": 800, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左上弹出",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": -800, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "左下弹出",
+        "duration": 1000,
+        "props": { "distanceX": -500, "distanceY": 800, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右上弹出",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": -800, "ease": "backIn" }
+      },
+      {
+        "script": "MoveIO",
+        "name": "右下弹出",
+        "duration": 1000,
+        "props": { "distanceX": 500, "distanceY": 800, "ease": "backIn" }
+      }
+    ]
+  },
+  {
+    "key": "scroll",
+    "name": "滚动消失",
+    "list": [
+      {
+        "script": "RotateMoveIO",
+        "name": "顶部滚出",
+        "duration": 1000,
+        "props": { "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "底部滚出",
+        "duration": 1000,
+        "props": { "distanceY": 600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "左边滚出",
+        "duration": 1000,
+        "props": { "distanceX": -300 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右边滚出",
+        "duration": 1000,
+        "props": { "distanceX": 300 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "左上滚出",
+        "duration": 1000,
+        "props": { "distanceX": -300, "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "左下滚出",
+        "duration": 1000,
+        "props": { "distanceX": -300, "distanceY": 600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右上滚出",
+        "duration": 1000,
+        "props": { "distanceX": 300, "distanceY": -600 }
+      },
+      {
+        "script": "RotateMoveIO",
+        "name": "右下滚出",
+        "duration": 1000,
+        "props": { "distanceX": 300, "distanceY": 600 }
+      }
+    ]
+  },
+  {
+    "key": "expand",
+    "name": "展开消失",
+    "list": [
+      {
+        "script": "ScaleIO",
+        "name": "向上收缩",
+        "duration": 1000,
+        "props": { "anchorY": 0, "enableX": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向下收缩",
+        "duration": 1000,
+        "props": { "anchorY": 1, "enableX": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向左收缩",
+        "duration": 1000,
+        "props": { "anchorX": 0, "enableY": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "向右收缩",
+        "duration": 1000,
+        "props": { "anchorX": 1, "enableY": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "左右收缩",
+        "duration": 1000,
+        "props": { "enableY": false }
+      },
+      {
+        "script": "ScaleIO",
+        "name": "上下收缩",
+        "duration": 1000,
+        "props": { "enableX": false }
+      }
+    ]
+  },
+  {
+    "key": "combo",
+    "name": "组合消失",
+    "list": [
+      {
+        "script": "RotateScaleIO",
+        "name": "缩小旋出",
+        "duration": 1000
+      },
+      {
+        "script": "RotateSmallIO",
+        "name": "放大旋出",
+        "duration": 1000
+      },
+      {
+        "script": "TurnScaleIO",
+        "name": "缩小转出",
+        "duration": 1000
+      },
+      {
+        "script": "TurnSmallIO",
+        "name": "右旋放大",
+        "duration": 1000,
+        "props": { "startAngle": -45 }
+      },
+      {
+        "script": "TurnSmallIO",
+        "name": "左旋放大",
+        "duration": 1000,
+        "props": { "startAngle": 45 }
+      }
+    ]
+  },
+  {
+    "key": "drop",
+    "name": "脱落消失",
+    "list": [
+      {
+        "script": "RotateDropIO",
+        "duration": 1000,
+        "name": "向左脱落",
+        "props": {
+          "distanceY": 1200,
+          "anchorX": 0,
+          "anchorY": 0,
+          "startAngle": 45,
+          "rotateRange": 20
+        }
+      },
+      {
+        "script": "RotateDropIO",
+        "duration": 1000,
+        "name": "向右脱落",
+        "props": {
+          "distanceY": 1200,
+          "anchorX": 1,
+          "anchorY": 0,
+          "startAngle": -45,
+          "rotateRange": 20
+        }
+      }
+    ]
+  }
+]
